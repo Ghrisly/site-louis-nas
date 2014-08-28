@@ -14,7 +14,6 @@
 ### Musicien
 * Parcours
 * Gallerie
-* API annonce superprof.fr
 * Projet Cantus Hydrae
 
 ### Contact
