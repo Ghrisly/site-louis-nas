@@ -73,7 +73,7 @@ module.exports = function(grunt) {
       },
 	  partials: {
         expand: true,
-        src: ["partials/*"],
+        src: ["partials/**"],
         dest: 'dist/'
       }
     },

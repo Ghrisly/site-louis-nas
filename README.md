@@ -1,8 +1,7 @@
 # Site Internet de Louis Nas
 ##TODO
 ### Généralités
-* Module Rewrite pour grunt
-* Liens vers les pages
+* Problème d'accès direct
 
 ### Accueil
 * Biographie

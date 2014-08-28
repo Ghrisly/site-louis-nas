@@ -14,20 +14,47 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider.
         when('/',
           {
-            templateUrl: "partials/accueil.html",
-            controller: "HomeCtrl"
+            templateUrl: "partials/accueil.html"
           }
         )
-        .when('/overview', 
+        .when('/acteur/parcours', 
           {
-            templateUrl: "partials/accueil.html",
-            controller: "HomeCtrl"
+            templateUrl: "partials/acteur/parcours.html"
           }
         )
-        .when('/users', 
+        .when('/acteur/gallerie', 
           {
-            templateUrl: "partials/accueil.html",
-            controller: "HomeCtrl"
+            templateUrl: "partials/acteur/gallerie.html"
+          }
+        )
+        .when('/acteur/infos', 
+          {
+            templateUrl: "partials/acteur/infos.html"
+          }
+        )
+        .when('/musicien/parcours', 
+          {
+            templateUrl: "partials/musicien/parcours.html"
+          }
+        )
+        .when('/musicien/cours-particuliers', 
+          {
+            templateUrl: "partials/musicien/cours.html"
+          }
+        )
+        .when('/musicien/cantus-hydrae', 
+          {
+            templateUrl: "partials/musicien/cantus-hydrae.html"
+          }
+        )
+        .when('/musicien/gallerie', 
+          {
+            templateUrl: "partials/musicien/gallerie.html"
+          }
+        )
+        .when('/contact', 
+          {
+            templateUrl: "partials/contact.html"
           }
         )
         .otherwise({redirectTo: '/'});
