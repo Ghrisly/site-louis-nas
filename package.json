@@ -19,6 +19,8 @@
     "grunt-contrib-connect": "~0.8.0"
   },
   "dependencies": {
-    "http-rewrite-middleware": "~0.1.6"
+    "http-rewrite-middleware": "~0.1.6",
+    "gzippo": "~0.2.0",
+    "express": "~4.8.6"
   }
 }
