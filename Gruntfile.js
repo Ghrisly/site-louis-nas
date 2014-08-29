@@ -1,4 +1,11 @@
+  var modRewrite = require('connect-modrewrite');
+var mountFolder = function (connect, dir) {
+    return connect.static(require('path').resolve(dir));
+};
+
+
 module.exports = function(grunt) {
+
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -91,7 +98,13 @@ module.exports = function(grunt) {
       server: {
         options: {
             keepalive: true,
-            base: 'dist'
+            base: 'dist',
+             middleware: function (connect) {
+                        return [
+                            modRewrite (['!\\.html|\\.js|\\.svg|\\.css|\\.png|\\.jpg$ /index.html [L]']),
+                            mountFolder(connect, 'dist')
+                        ];
+                    } 
         }
       }
     }
@@ -105,6 +118,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   
+  grunt.registerTask('server', ['connect:server']);
   grunt.registerTask('default', ['concat', 'less:development']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['concat', 'uglify', 'less:production', 'copy']);

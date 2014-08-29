@@ -1,7 +1,7 @@
 # Site Internet de Louis Nas
 ##TODO
 ### Généralités
-* Problème d'accès direct
+* Surlignage accueil et contact dans le menu lors du changement de page
 
 ### Accueil
 * Biographie

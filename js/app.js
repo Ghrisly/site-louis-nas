@@ -42,7 +42,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: "partials/musicien/cours.html"
           }
         )
-        .when('/musicien/cantus-hydrae', 
+        .when('/musicien/cantushydrae', 
           {
             templateUrl: "partials/musicien/cantus-hydrae.html"
           }
