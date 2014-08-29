@@ -1,7 +1,7 @@
 {
   "name": "site-louis-nas",
   "version": "0.1.0",
-  "description": "",
+  "description": "Site de Louis Nas",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt test"
