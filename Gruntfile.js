@@ -78,6 +78,17 @@ module.exports = function(grunt) {
         src: ["index.html"],
         dest: 'dist/'
       },
+      contact: {
+        expand : true,
+        src : ["contact-form.php"],
+        dest : 'dist/partials/'
+      },
+
+      mailer : {
+        expand : true,
+        src : ["phpmailer/*"],
+        dest : 'dist/partials/'
+      },
 	  partials: {
         expand: true,
         src: ["partials/**"],
